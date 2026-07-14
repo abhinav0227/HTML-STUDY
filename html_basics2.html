@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4 Forms</title>
+</head>
+<body>
+    
+<h1>User Forms</h1>
+
+<hr><hr>
+
+<h2>Login Form</h2>
+
+<form action="login.php" method="get">
+    
+<label for="login_username">Username</label>
+<input
+      type="text"
+      id="login_username"
+      name="Name"
+      placeholder="Enter Username"
+      required
+      minlength="3"
+>
+      <br><br>
+
+<input type="submit">
+
+<br><br> 
+
+
+</form>
+
+<h2>Registration Form</h2>
+
+<form action="/register" method="post"
+<input 
+      type="text"
+      id="Name"
+      name="Full Name"
+      placeholder=" Enter Full Name"
+      required
+      >
+
+      <br><br>
+
+      label for="email">Email:</label><br>
+    <input 
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+        required
+    >
+    <br><br>
+
+    <label for="reg_password">Password:</label><br>
+    <input 
+        type="password"
+        id="reg_password"
+        name="password"
+        minlength="6"
+        required
+    >
+    <br><br>
+
+    <label for="age">Age</label><br>
+    <input
+        type="number"
+        id="age"
+        name="Age"
+        min="1"
+        max="100"
+        >
+
+        <br><br>
+
+        <label for="dob">Date Of Birth</label><br>
+        <input
+            type="date"
+            id="dob"
+            name="dob"
+            >
+
+            <br><br>
+
+            <p>Gender:</p>
+
+            <label for="Male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"></input>
+
+            <label for="Female">Female</label>
+            <input type="radio" id="male" name="gender" value="female"></input>
+
+            <br><br>
+
+            <p>Hobbies:</p>
+
+            <label for="Reading">Reading</label>
+            <input type="checkbox" id="Reading" name="Hobbies" value="Reading"></input>
+
+            <label for="Sports">Sports</label>
+            <input type="checkbox" id="Sports" name="Hobbies" value="Sports"></input>
+
+            <label for="Music">Music</label>
+            <input type="checkbox" id="Music" name="Hobbies" value="Music"></input>
+
+            <br><br>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+            <option value="">--Select--</option>
+            <option value="Btech">Btech</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+            </select>
+
+            <br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input id="resume"
+                   name="resume"
+                   type="file"
+            >
+            
+            <br><br>
+
+            <label for="bio">Short Bio:</label><br>
+
+            <textarea
+                  id="bio"
+                  name="bio"
+                  rows="5"
+                  cols="30"
+                  placeholder="Write about yourself..."
+                  >
+            </textarea>
+
+            <br><br>
+            <input type="submit" value="Register">
+
+</form>
+
+<hr>
+
+<h2>Feedback Form</h2>
+
+<form action="/feedback" method="POST">
+
+    <label for="feedback_name">Name:</label><br>
+    <input type="text" id="feedback_name" name="name" required>
+
+    <br><br>
+
+    <label for="rating">Rating:</label><br>
+
+    <select id="rating" name="rating">
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+    </select>
+
+    <br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit Feedback">
+
+</form>
+
+<hr>
+
+<p>End of Day 4 Forms Practice</p>
+
+</body>
+</html>
